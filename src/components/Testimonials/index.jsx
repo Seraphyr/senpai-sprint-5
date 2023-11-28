@@ -7,8 +7,8 @@ export default function Testimonials() {
             <div className='Testimonials__container'>
                 <img className="Testimonials__quotation" src="../images/bg-quotes.png" alt="quotation icon" />
 
-                {testimonials.map(testimonials => (
-                    <div>
+                {testimonials.map((testimonial, index) => (
+                    <div key={index}>
                         <div className="Testimonial">
                             <p className="Testimonial__quote">{testimonials.quote}</p>
                             <img className='Testimonial__image' src={testimonials.image} alt={testimonials.title} />
